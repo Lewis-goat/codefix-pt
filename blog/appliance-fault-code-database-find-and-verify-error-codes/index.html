@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Como encontrar e verificar um código de avaria em qualquer eletrodoméstico</title>
+<meta name="description" content="Onde os fabricantes escondem as listas de códigos, como cruzar fóruns com a documentação de serviço e o perigo de interpretar mal o mesmo código.">
+<link rel="canonical" href="https://pt.codefixcoffee.com/blog/appliance-fault-code-database-find-and-verify-error-codes/">
+<link rel="alternate" hreflang="en" href="https://blog.codefixcoffee.com/post/appliance-fault-code-database-find-and-verify-error-codes/" />
+  <link rel="alternate" hreflang="fr" href="https://fr.codefixcoffee.com/blog/appliance-fault-code-database-find-and-verify-error-codes/" />
+  <link rel="alternate" hreflang="de" href="https://de.codefixcoffee.com/blog/appliance-fault-code-database-find-and-verify-error-codes/" />
+  <link rel="alternate" hreflang="es" href="https://es.codefixcoffee.com/blog/appliance-fault-code-database-find-and-verify-error-codes/" />
+  <link rel="alternate" hreflang="it" href="https://it.codefixcoffee.com/blog/appliance-fault-code-database-find-and-verify-error-codes/" />
+  <link rel="alternate" hreflang="pl" href="https://pl.codefixcoffee.com/blog/appliance-fault-code-database-find-and-verify-error-codes/" />
+  <link rel="alternate" hreflang="nl" href="https://nl.codefixcoffee.com/blog/appliance-fault-code-database-find-and-verify-error-codes/" />
+  <link rel="alternate" hreflang="pt" href="https://pt.codefixcoffee.com/blog/appliance-fault-code-database-find-and-verify-error-codes/" />
+  <link rel="alternate" hreflang="hu" href="https://hu.codefixcoffee.com/blog/appliance-fault-code-database-find-and-verify-error-codes/" />
+  <link rel="alternate" hreflang="cs" href="https://cs.codefixcoffee.com/blog/appliance-fault-code-database-find-and-verify-error-codes/" />
+  <link rel="alternate" hreflang="ro" href="https://ro.codefixcoffee.com/blog/appliance-fault-code-database-find-and-verify-error-codes/" />
+  <link rel="alternate" hreflang="sv" href="https://sv.codefixcoffee.com/blog/appliance-fault-code-database-find-and-verify-error-codes/" />
+  <link rel="alternate" hreflang="tr" href="https://tr.codefixcoffee.com/blog/appliance-fault-code-database-find-and-verify-error-codes/" />
+<link rel="stylesheet" href="/blog/blog.css">
+<link rel="alternate" type="application/rss+xml" title="CodeFix Blog" href="/blog/rss.xml">
+</head>
+<body>
+<header class="site"><div class="in"><a class="brand" href="/blog/">☕ CodeFix Blog</a><span><a href="/">Voltar ao site</a></span></div></header>
+<main>
+<h1>Como encontrar e verificar um código de avaria em qualquer eletrodoméstico</h1>
+<p class="meta">2026-10-06</p>
+<p>O código no ecrã é metade da resposta: confirma que a máquina detetou uma falha, mas raramente diz qual peça comprar. Um código de avaria é um sintoma descrito pelo programador da placa de controlo — e a mesma placa que deteta a falha também a pode relatar mal. Antes de encomendar seja o que for, precisa do significado para a sua marca exata, o tipo de aparelho e o modelo, obtido junto de mais do que uma fonte.</p>
+<h2>As listas dos fabricantes existem — mas estão escondidas ou nem existem</h2>
+<p>A primeira surpresa é descobrir quantas vezes não há lista oficial nenhuma, ou a lista mora onde nenhum utilizador olha.</p>
+<ul>
+<li>Há marcas que não publicam nada. As máquinas de lavar loiça GE mostram códigos C, H2O e 888, mas o <a href="https://www.geappliances.com/">site da GE Appliances</a> não mantém página oficial de códigos — o espaço é preenchido por sites de reparação. Um 888 numa loiça GE é falha da placa de controlo (<a href="https://pt.codefixcoffee.com/blog/ge-dishwasher-888-board/">explicação do código 888</a>) e não é à GE que o vai aprender.</li>
+</ul>
+<ul>
+<li>Há marcas que dividem a informação em duas camadas. As máquinas De'Longhi mostram sobretudo palavras como Alarme Geral, enquanto os modelos mais recentes registam também códigos numéricos — 1101, 1512 — que em condições normais só o técnico vê; as duas camadas estão reunidas na <a href="https://pt.codefixcoffee.com/blog/delonghi-general-alarm-explained/">página do Alarme Geral e dos códigos numéricos da De'Longhi</a>.</li>
+</ul>
+<ul>
+<li>Há marcas que publicam apenas o subconjunto amigável. A Philips lista para as suas máquinas de café um conjunto pequeno de códigos que o utilizador resolve e encaminha tudo o resto para o suporte, ainda que os códigos "de serviço" tenham causas perfeitamente identificáveis.</li>
+</ul>
+<ul>
+<li>Quando o manual tem tabela, ela fica no fim, no capítulo de resolução de problemas: uma linha por código, sem nomes de componentes e sem passos de correção.</li>
+</ul>
+<p>A informação quase sempre existe — é preciso ir para lá do guia de arranque rápido.</p>
+<h2>Verificar um código como um técnico</h2>
+<h3>Registe o que o ecrã mostra, exatamente como mostra</h3>
+<p>Anote a sequência exata, o tipo de aparelho, o número completo de modelo da chapa de características e o momento em que o código surge. Um único algarismo mal lido manda-o para o subsistema errado: o "SE" num fogão ou num forno de embutir Samsung é uma tecla presa na membrana do painel (<a href="https://pt.codefixcoffee.com/blog/samsung-stuck-key-se/">SE explicado</a>), e sequências parecidas noutros tipos de aparelho apontam para todo o outro lado.</p>
+<p>Repare ainda se o código aparece no arranque ou a meio do ciclo: as falhas de arranque são apanhadas pelo autoteste, as de meio do ciclo envolvem o que estava ativo — bomba, resistência ou válvula. Note também o que o faz desaparecer; os fornos Samsung mantêm o código no ecrã até a causa ser corrigida ou até um corte de três minutos no disjuntor, e o conjunto completo da marca está indexado na <a href="https://pt.codefixcoffee.com/blog/samsung-oven-c-codes/">página de códigos de forno Samsung</a>.</p>
+<h3>Primeiro, o significado do fabricante</h3>
+<p>Antes de abrir um único fórum, consulte o capítulo de resolução de problemas, o portal de peças e serviço da marca e os boletins técnicos em PDF do seu modelo. O significado oficial é a linha de base; tudo o resto é comentário.</p>
+<h3>Depois, cruze os fóruns com a documentação de serviço</h3>
+<p>É nos fóruns que se aprende o que realmente parte. Uma tabela de serviço diz que um código significa "falha do grupo de preparação"; um tópico diz que, no seu modelo, é quase sempre um disco de café encravado e quinze minutos de limpeza. Trate os tópicos como evidência, não como verdade:</p>
+<ul>
+<li>Dê peso aos posts que nomeiam o seu modelo exato e descrevem uma correção que continuava a resultar semanas depois.</li>
+</ul>
+<ul>
+<li>Desconfie de qualquer tópico que recomende a mesma peça para todos os códigos em todas as máquinas.</li>
+</ul>
+<ul>
+<li>Quando um fórum e um documento de serviço discordam, o documento ganha no significado; o fórum ganha na probabilidade.</li>
+</ul>
+<h2>A armadilha: o mesmo código, significados diferentes</h2>
+<p>É aqui que a autodiagnose se perde, porque os códigos de erro não são normalizados — nem entre marcas, nem às vezes dentro da mesma gama de uma marca.</p>
+<ul>
+<li>O mesmo número pode significar coisas sem relação entre si. Numa Jura, o Error 2 é uma falha da sonda do termobloco de café — ou apenas uma máquina fria demais para aquecer (<a href="https://pt.codefixcoffee.com/blog/jura-error-2-winter-guide/">história completa do Error 2</a>). Numa Philips ou Saeco, o Error 02 é uma falha interna encaminhada diretamente para a assistência. Mesmo número, mesma categoria, subsistemas e faturas diferentes.</li>
+</ul>
+<ul>
+<li>As palavras podem esconder códigos. Um Alarme Geral da De'Longhi tem um gémeo numérico registado para os técnicos; corrigi-lo a sério é conhecer as duas camadas.</li>
+</ul>
+<ul>
+<li>A categoria pesa tanto como a marca. Uma sequência que num fogão significa uma coisa significa outra na máquina de lavar loiça ou na máquina de lavar roupa da mesma marca. Filtre primeiro por tipo de aparelho, só depois por modelo.</li>
+</ul>
+<p>Faça a prova de sentido contra o sintoma: um código de aquecimento numa máquina que ainda aquece, ou de drenagem numa que drena na perfeição, significa normalmente que está a ler a entrada errada — ou a entrada do modelo errado.</p>
+<h2>Uma verificação em cinco passos</h2>
+<ol>
+<li>Fotografe o ecrã e anote o número completo de modelo da chapa de características.</li>
+</ol>
+<ol>
+<li>Obtenha o significado do fabricante no manual ou na documentação de serviço.</li>
+</ol>
+<ol>
+<li>Confirme com pelo menos dois tópicos de fórum que nomeiam o seu modelo e relatam uma correção duradoura.</li>
+</ol>
+<ol>
+<li>Cruze o significado numa referência independente: um erro 11 ou 19 da Philips deve ler-se igual em qualquer fonte (<a href="https://www.philips.com/">apoio da Philips</a>); quando duas fontes discordam, confie na que cita documentação de serviço.</li>
+</ol>
+<ol>
+<li>Reinicie a máquina uma vez e decida: se o código voltar de imediato, trate-o como real e escolha entre peça barata, limpeza ou técnico.</li>
+</ol>
+<h2>Quando fechar os separadores</h2>
+<p>Pare de pesquisar quando duas fontes independentes concordam no significado e o sintoma encaixa. Nenhuma leitura adicional muda um código que volta logo a seguir a um reset — a partir daí a decisão é prática: o preço da peça contra a idade da máquina.</p>
+<h3>Conselho prático para o mercado português</h3>
+<p>Grande parte dos eletrodomésticos vendidos em Portugal entra por importação a partir de Espanha ou da Alemanha, e o nome comercial da caixa esconde por vezes referências diferentes das dos manuais publicados — confirme sempre o número completo na chapa de características da própria máquina antes de pesquisar. Se o manual vier só em alemão ou em castelhano, os PDF em português costumam estar na área de apoio ao consumidor do fabricante. E ao contactar uma assistência nacional, indique logo o modelo exato e o código: peças para referências de outros mercados podem demorar dias a chegar a Portugal.</p>
+</main>
+<footer>Guias de reparação e explicações de códigos de erro de codefixcoffee.com.</footer>
+</body></html>
