@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>"Jura Erros 1 a 5: a família do termobloco explicada"</title>
+<meta name="description" content=""Erros 1 a 5 na Jura: vêm dos termoblocos, sondas NTC ou fusíveis térmicos. Que código aponta para que peça — e a armadilha do frio no Erro 2."">
+<link rel="canonical" href="https://pt.codefixcoffee.com/blog/jura-thermoblock-errors-1-to-5/">
+<link rel="alternate" hreflang="en" href="https://blog.codefixcoffee.com/post/jura-thermoblock-errors-1-to-5/" />
+  <link rel="alternate" hreflang="fr" href="https://fr.codefixcoffee.com/blog/jura-thermoblock-errors-1-to-5/" />
+  <link rel="alternate" hreflang="de" href="https://de.codefixcoffee.com/blog/jura-thermoblock-errors-1-to-5/" />
+  <link rel="alternate" hreflang="es" href="https://es.codefixcoffee.com/blog/jura-thermoblock-errors-1-to-5/" />
+  <link rel="alternate" hreflang="it" href="https://it.codefixcoffee.com/blog/jura-thermoblock-errors-1-to-5/" />
+  <link rel="alternate" hreflang="pl" href="https://pl.codefixcoffee.com/blog/jura-thermoblock-errors-1-to-5/" />
+  <link rel="alternate" hreflang="nl" href="https://nl.codefixcoffee.com/blog/jura-thermoblock-errors-1-to-5/" />
+  <link rel="alternate" hreflang="pt" href="https://pt.codefixcoffee.com/blog/jura-thermoblock-errors-1-to-5/" />
+  <link rel="alternate" hreflang="hu" href="https://hu.codefixcoffee.com/blog/jura-thermoblock-errors-1-to-5/" />
+  <link rel="alternate" hreflang="cs" href="https://cs.codefixcoffee.com/blog/jura-thermoblock-errors-1-to-5/" />
+  <link rel="alternate" hreflang="ro" href="https://ro.codefixcoffee.com/blog/jura-thermoblock-errors-1-to-5/" />
+  <link rel="alternate" hreflang="sv" href="https://sv.codefixcoffee.com/blog/jura-thermoblock-errors-1-to-5/" />
+  <link rel="alternate" hreflang="tr" href="https://tr.codefixcoffee.com/blog/jura-thermoblock-errors-1-to-5/" />
+<link rel="stylesheet" href="/blog/blog.css">
+<link rel="alternate" type="application/rss+xml" title="CodeFix Blog" href="/blog/rss.xml">
+</head>
+<body>
+<header class="site"><div class="in"><a class="brand" href="/blog/">☕ CodeFix Blog</a><span><a href="/">Voltar ao site</a></span></div></header>
+<main>
+<h1>"Jura Erros 1 a 5: a família do termobloco explicada"</h1>
+<p class="meta">2026-10-09</p>
+<p>À primeira vista, os códigos 1 a 5 da Jura parecem números soltos, mas partilham um tema: o calor. Todos apontam para os termoblocos — os aquecedores compactos, em linha, que preparam a água do café e o vapor — ou para as sondas e os cordões de fusível térmico que os vigiam. Aprender a ler esta família permite saber qual é o aquecedor descontente e se o problema é de medição, de temperatura ou de alimentação.</p>
+<h2>Dois aquecedores, cinco códigos</h2>
+<p>Uma Jura tem dois termoblocos: o do café aquece a água de extração; o do vapor alimenta o vapor e a água quente. Cada um transporta uma sonda NTC — uma resistência cujo valor varia com a temperatura — que reporta à placa de controlo, e cada um está protegido por cordões de fusível térmico que cortam a alimentação se o bloco sobreaquecer. Os Erros 1 a 5 são a forma de a placa dizer que um destes elementos falhou:</p>
+<ul>
+<li><strong>Erros 1 e 2</strong> apontam para o circuito da sonda do termobloco do café.</li>
+<li><strong>Erros 3 e 4</strong> apontam para o termobloco do vapor — leitura baixa ou sobreaquecimento.</li>
+<li><strong>Erro 5</strong> é o próprio aquecedor que não entrega.</li>
+</ul>
+<h2>Os códigos do lado do café</h2>
+<h3>Erro 1: falha da sonda do termobloco do café</h3>
+<p>O <a href="https://pt.codefixcoffee.com/jura/automatic-machines/error-1/">Erro 1</a> significa que a placa não consegue uma leitura coerente da sonda de temperatura do termobloco do café — nas famílias S, X, J e Z é a clássica avaria de sonda; na F e na E80 costuma indicar uma sonda danificada. Um pormenor que vale ouro: uma máquina que acabou de chegar num carro ou garagem frios pode mostrar este código sem nada estar partido. Se surgir com a máquina já quente e reaparecer de imediato após um reinício, o circuito está aberto — a sonda, o cabo ou os cordões de fusível que alimentam o bloco.</p>
+<h3>Erro 2: sonda interrompida — ou máquina simplesmente fria</h3>
+<p>O <a href="https://pt.codefixcoffee.com/jura/automatic-machines/error-2/">Erro 2</a> é o código Jura mais comum de todos e tem duas caras. A versão benigna: a máquina está abaixo de uns 10 °C e o aquecedor fica bloqueado de propósito até aquecer — frequente em entregas de inverno ou em máquinas guardadas em divisões frias. A versão a sério: a sonda do termobloco do café ou os cordões de fusível térmico foram a circuito aberto.</p>
+<p>É por isso que o teste de aquecimento é o diagnóstico. Leve a máquina à temperatura ambiente — há quem use um secador de cabelo no mínimo, soprado para o compartimento do depósito durante cinco minutos, ou um depósito cheio de água morna (nunca a ferver) — e reinicie. Se o código desaparecer, nada está avariado; guarde a máquina num sítio mais quente. Se persistir com a máquina quente, o circuito da sonda está aberto e a NTC e os fusíveis têm de ser verificados lá dentro.</p>
+<h3>O inverno português e o Erro 2</h3>
+<p>Muitas casas portuguesas não têm aquecimento central em todas as divisões, e no norte e no interior uma cozinha desaquecida desce com facilidade abaixo dos 10 °C entre dezembro e fevereiro. Se a máquina passa a noite numa despensa, numa garagem ou encostada a uma parede exterior, o Erro 2 de manhã não é avaria — é termómetro. Meia hora numa divisão aquecida antes do primeiro café resolve o assunto sem abrir nada.</p>
+<h2>Os códigos do lado do vapor</h2>
+<h3>Erro 3: leitura baixa no termobloco do vapor</h3>
+<p>O <a href="https://pt.codefixcoffee.com/jura/automatic-machines/error-3/">Erro 3</a> é o espelho do Erro 1 no lado do vapor: o termobloco não comunica a temperatura, por culpa da sonda, do cabo ou de a máquina ainda estar fria. Um ângulo extra: o calcário pesado abranda o aquecimento ao ponto de, nalguns firmwares, fazer disparar a verificação — por isso uma descalcificação completa merece lugar na lista antes de qualquer desmontagem. Lá dentro, convém inspecionar o cabo da sonda nos pontos onde dobra.</p>
+<h3>Erro 4: sobreaquecimento do termobloco do vapor</h3>
+<p>O <a href="https://pt.codefixcoffee.com/jura/automatic-machines/error-4/">Erro 4</a> é o que se leva a sério. O termobloco do vapor ultrapassou a temperatura que a placa esperava — ou a sonda está a ler a menos (calcário a isolá-la, contactos oxidados) ou a placa de alimentação não cortou o aquecedor. A própria Jura aponta os Erros 2 e 4 como as duas reparações mais comuns. Depois de arrefecer e descalcificar, a sonda é a primeira substituição; se o bloco voltar a sobreaquecer com uma NTC nova, a placa de alimentação não está a desligar o aquecedor e tem de ser trocada (conte com 120 € a 250 €). Um aquecedor que não desliga é risco de incêndio: não deixe a máquina ligada sem vigilância enquanto este código estiver ativo.</p>
+<h3>Erro 5: aquecedor que não atinge a temperatura</h3>
+<p>O <a href="https://pt.codefixcoffee.com/jura/automatic-machines/error-5/">Erro 5</a> diz que o aquecedor foi ligado e a temperatura nunca subiu. Numa Jura, a culpa é quase sempre dos cordões de fusível térmico que protegem o termobloco — rebentam depois de um sobreaquecimento ou simplesmente com a idade; um elemento do termobloco morto é a outra causa. Uma máquina muito fria também o pode despoletar, por isso aqueça-a primeiro. No interior, meça os fusíveis e o elemento: aquele que ler aberto é a peça a substituir — e depois descubra porque rebentaram (calcário, relé colado ou funcionamento a seco com o depósito vazio).</p>
+<h2>A peça que une toda a família</h2>
+<p>Nesta família, os cordões de fusível térmico e as sondas NTC são as personagens recorrentes: uma sonda NTC original Jura custa cerca de 25 € a 40 €, um jogo de fusíveis 15 € a 30 € e um termobloco 90 € a 180 €. Quando se substitui uma sonda, a regra de ofício é trocar os fusíveis ao mesmo tempo. E há um padrão que importa: um fusível que rebenta de novo ao fim de poucos dias significa que a placa de alimentação mantém o aquecedor ligado — não que o fusível novo teve azar.</p>
+<p>Atenção: as caixas Jura fecham com parafusos de segurança e os termoblocos transportam tensão de rede — esta família é reparação de bancada, salvo estando equipado para isso. Compensa nas S, Z, GIGA e E mais recentes; numa Impressa de dez anos, pondere o orçamento face a uma máquina recondicionada. O <a href="https://pt.codefixcoffee.com/jura/">índice de códigos de erro Jura</a> enquadra o resto da gama, e o <a href="https://www.jura.com">site oficial da Jura</a> publica os manuais e as instruções de descalcificação de cada modelo.</p>
+</main>
+<footer>Guias de reparação e explicações de códigos de erro de codefixcoffee.com.</footer>
+</body></html>
