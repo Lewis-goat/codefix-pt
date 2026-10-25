@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fogões Samsung: os códigos C da família da temperatura</title>
+<meta name="description" content="C-21, C-24 e C-F2 em fogões e fornos Samsung: sobreaquecimento, subida rápida na ventilação e feedback do ventilador, com soluções e custos.">
+<link rel="canonical" href="https://pt.codefixcoffee.com/blog/samsung-oven-c-codes/">
+<link rel="alternate" hreflang="en" href="https://blog.codefixcoffee.com/post/samsung-oven-c-codes/" />
+  <link rel="alternate" hreflang="fr" href="https://fr.codefixcoffee.com/blog/samsung-oven-c-codes/" />
+  <link rel="alternate" hreflang="de" href="https://de.codefixcoffee.com/blog/samsung-oven-c-codes/" />
+  <link rel="alternate" hreflang="es" href="https://es.codefixcoffee.com/blog/samsung-oven-c-codes/" />
+  <link rel="alternate" hreflang="it" href="https://it.codefixcoffee.com/blog/samsung-oven-c-codes/" />
+  <link rel="alternate" hreflang="pl" href="https://pl.codefixcoffee.com/blog/samsung-oven-c-codes/" />
+  <link rel="alternate" hreflang="nl" href="https://nl.codefixcoffee.com/blog/samsung-oven-c-codes/" />
+  <link rel="alternate" hreflang="pt" href="https://pt.codefixcoffee.com/blog/samsung-oven-c-codes/" />
+  <link rel="alternate" hreflang="hu" href="https://hu.codefixcoffee.com/blog/samsung-oven-c-codes/" />
+  <link rel="alternate" hreflang="cs" href="https://cs.codefixcoffee.com/blog/samsung-oven-c-codes/" />
+  <link rel="alternate" hreflang="ro" href="https://ro.codefixcoffee.com/blog/samsung-oven-c-codes/" />
+  <link rel="alternate" hreflang="sv" href="https://sv.codefixcoffee.com/blog/samsung-oven-c-codes/" />
+  <link rel="alternate" hreflang="tr" href="https://tr.codefixcoffee.com/blog/samsung-oven-c-codes/" />
+<link rel="stylesheet" href="/blog/blog.css">
+<link rel="alternate" type="application/rss+xml" title="CodeFix Blog" href="/blog/rss.xml">
+<meta name="google-adsense-account" content="ca-pub-9660119725457689"><script>(function(){var u="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9660119725457689";var d=false;function l(){if(d)return;d=true;var s=document.createElement("script");s.async=true;s.crossOrigin="anonymous";s.src=u;document.head.appendChild(s)}["scroll","pointerdown","keydown","touchstart"].forEach(function(e){addEventListener(e,l,{once:true,passive:true})});addEventListener("load",function(){setTimeout(l,3500)})})();</script></head>
+<body>
+<header class="site"><div class="in"><a class="brand" href="/blog/">☕ CodeFix Blog</a><span><a href="/">Voltar ao site</a></span></div></header>
+<main>
+<h1>Fogões Samsung: os códigos C da família da temperatura</h1>
+<p class="meta">2026-10-25</p>
+<p>Os fogões e fornos de embutir Samsung — as séries NE e NX, e as irmãs NV e NZ — falam dois dialetos de erro. Os códigos de duas partes, como E-08 e E-27, reportam as resistências de aquecimento; os códigos curtos, como SE e tE, reportam o painel de comando. Entre os dois situa-se a família C — C-21, C-24 e C-F2 —, a monitorização da temperatura e do ventilador que recolhemos no <a href="https://pt.codefixcoffee.com/samsung-oven-error-codes/">índice de códigos de forno Samsung</a>. São os códigos a levar mais a sério, porque pelo menos um deles significa que o forno ficou mesmo quente demais.</p>
+<h2>Não há registo de erros para consultar</h2>
+<p>Os fornos Samsung não têm registo de erros acessível ao utilizador. O código permanece no visor até a causa ser resolvida ou até cortar a corrente no disjuntor — nos procedimentos da família C falam-se de cinco a dez minutos — e, se ele voltar depois do reset, trate-o como real em vez de ir repetindo resets na esperança de que desapareça.</p>
+<h2>C-21: o encerramento por sobreaquecimento</h2>
+<p>O <a href="https://pt.codefixcoffee.com/samsung/range-wall-oven/c-21/">C-21</a> é o monitor de segurança a avisar que a temperatura interna da cavidade saiu da janela segura e que a placa cortou o aquecimento. Há relatos de fogões que ficaram perigosamente quentes antes de o código aparecer, por isso encare-o como um sinal para parar de cozinhar, não como um incómodo. O culpado habitual é a sonda de temperatura da cavidade ou a respetiva cablagem; a placa principal é o segundo suspeito.</p>
+<ol>
+<li>Corte a corrente no disjuntor durante cinco a dez minutos e faça um único novo teste; se o C-21 reaparecer no aquecimento seguinte, a avaria é real.</li>
+<li>Desligue o fogão, retire os dois parafusos que fixam a sonda à parede traseira da cavidade e puxe a cablagem para a frente até a poder desconectar.</li>
+<li>Meça a sonda com um multímetro: cerca de 1080 ohm à temperatura ambiente é saudável; circuito aberto ou um valor disparatado pede substituição.</li>
+<li>Inspecione a ficha da cablagem onde esta passa perto da resistência — um conector derretido pelo calor produz o mesmo código.</li>
+<li>Se a sonda estiver boa e o disparo continuar, a placa está a desregular as resistências, o que já é reparação para a assistência técnica.</li>
+</ol>
+<h2>C-24: o controlo de subida rápida</h2>
+<p>O <a href="https://pt.codefixcoffee.com/samsung/range-wall-oven/c-24/">C-24</a> deteta-se na zona da ventilação e do comando: o compartimento da eletrónica está a aquecer mais depressa do que a placa espera. A Samsung documenta a família C-24 e C-25 como sobreaquecimento ligado a essa área de ventilação. Na prática, divide-se em três: um ventilador de arrefecimento que nunca acelera, ar bloqueado à volta do fogão ou um termístor de sobretemperatura avariado que dá por quente uma zona saudável.</p>
+<p>O diagnóstico faz-se sobretudo a ouvir e a olhar. Faça o reset no disjuntor, lance um ciclo de cozedura e oiça o ventilador de convecção e o de arrefecimento à medida que o forno aquece; o silêncio é a resposta. Verifique as folgas de instalação e confirme que nenhum respiro por baixo ou atrás do fogão está tapado por mobiliário, folha de alumínio ou pó. Já sem corrente, o termístor de sobretemperatura mede-se na própria ficha — está na classe dos 1000 ohm, tal como a sonda da cavidade — e um que esteja aberto ou à deriva substitui-se. Se o ventilador está morto, troque-o antes que a placa se coza a si própria: o calor é a causa, a placa é a vítima.</p>
+<h2>C-F2: o feedback do ventilador de arrefecimento</h2>
+<p>O <a href="https://pt.codefixcoffee.com/samsung/range-wall-oven/c-f2/">C-F2</a> parece um código de sobreaquecimento, mas normalmente não é. A família C-F é o sistema de controlo a avisar que um componente monitorizado não responde — e, no C-F2, esse componente é o circuito do ventilador de arrefecimento: a placa do visor não recebe o sinal de feedback que esperava. Ou o ventilador mesmo não roda, ou a ficha está solta ou queimada, ou falhou a linha de feedback para a placa.</p>
+<p>Avance por ordem. Depois do reset no disjuntor, aqueça o forno e confirme se o ventilador roda fisicamente. Um ventilador a rodar com o código persistente aponta para o caminho do feedback: volte a encaixar a ficha do ventilador na placa e procure pinos descoloridos pelo calor. Um ventilador mudo manda verificar se a pá está bloqueada — pó, ou um parafuso caído atrás do painel — e depois medir o enrolamento em busca de circuito aberto. Ventilador e ficha resolvem-se por pouco dinheiro; um C-F2 que sobreviva às duas verificações aponta para a entrada da placa principal.</p>
+<h3>Fornos embutidos em cozinhas portuguesas</h3>
+<p>Nas cozinhas portuguesas, os fornos de embutir ficam com frequência apertados entre armários e bancadas, e é fácil os respiros ficarem parcialmente tapados — uma causa direta de C-24. Ao instalar ou reinstalar, confirme as folgas indicadas para o seu modelo no <a href="https://www.samsung.com/pt/support/">apoio da Samsung em Portugal</a> e ajuste o recorte do fundo do armário se for necessário. E, se o fogão foi importado dos EUA, lembre-se de que as séries NE americanas esperam 120/240 V e 60 Hz, ao passo que a rede cá é de 230 V e 50 Hz — a adaptação deve ser feita por um instalador certificado.</p>
+<h2>Quanto custam as peças</h2>
+<p>As sondas de temperatura da cavidade custam €15 a €40 e trocam-se com dois parafusos em dez minutos — a correção mais comum de toda a família. Os ventiladores de arrefecimento ficam entre €40 e €90 e as cablagens entre €10 e €20. O item caro é a placa principal, a €150 a €300, e só deve entrar na lista de compras depois de a sonda e o ventilador estarem eliminados. Uma assistência ao domicílio custa cerca de €120 a €250 com diagnóstico e peça incluídos; num fogão fora da garantia com avaria de placa, pedir esse orçamento antes de encomendar seja o que for é a ordem sensata das operações.</p>
+<p>Uma regra vale para a família inteira: não fique a repetir resets no C-21 e a continuar a cozinhar. O código significa que a placa já viu uma temperatura de que não gostou — e o próximo disparo pode vir mais acima na escala.</p>
+</main>
+<footer>Guias de reparação e explicações de códigos de erro de codefixcoffee.com.</footer>
+</body></html>
