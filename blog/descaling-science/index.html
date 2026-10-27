@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Descalcificação explicada como deve ser</title>
+<meta name="description" content="O que o calcário faz a termoblocos e válvulas, porque o vinagre não serve para algumas máquinas, ácido cítrico vs láctico e a frequência por dureza.">
+<link rel="canonical" href="https://pt.codefixcoffee.com/blog/descaling-science/">
+<link rel="alternate" hreflang="en" href="https://blog.codefixcoffee.com/post/descaling-science/" />
+  <link rel="alternate" hreflang="fr" href="https://fr.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="de" href="https://de.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="es" href="https://es.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="it" href="https://it.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="pl" href="https://pl.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="nl" href="https://nl.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="pt" href="https://pt.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="hu" href="https://hu.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="cs" href="https://cs.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="ro" href="https://ro.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="sv" href="https://sv.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="tr" href="https://tr.codefixcoffee.com/blog/descaling-science/" />
+<link rel="stylesheet" href="/blog/blog.css">
+<link rel="alternate" type="application/rss+xml" title="CodeFix Blog" href="/blog/rss.xml">
+<meta name="google-adsense-account" content="ca-pub-9660119725457689"><script>(function(){var u="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9660119725457689";var d=false;function l(){if(d)return;d=true;var s=document.createElement("script");s.async=true;s.crossOrigin="anonymous";s.src=u;document.head.appendChild(s)}["scroll","pointerdown","keydown","touchstart"].forEach(function(e){addEventListener(e,l,{once:true,passive:true})});addEventListener("load",function(){setTimeout(l,3500)})})();</script></head>
+<body>
+<header class="site"><div class="in"><a class="brand" href="/blog/">☕ CodeFix Blog</a><span><a href="/">Voltar ao site</a></span></div></header>
+<main>
+<h1>Descalcificação explicada como deve ser</h1>
+<p class="meta">2026-10-27</p>
+<p>Em qualquer lista de avarias de máquinas de café há uma causa de fundo que domina todas as outras: o calcário. A água dura transporta cálcio e magnésio dissolvidos; aqueça essa água e os carbonatos saem da solução, depositando-se no metal mais quente da máquina. Só isto é o calcário — e é ele que está por trás de uma fatia desproporcional dos códigos deste site: avarias da resistência de aquecimento, avarias de válvula, falhas de primagem e luzes de descalcificação presas. É também a única família de avarias com uma solução de €10.</p>
+<h2>O que o calcário faz a um termobloco</h2>
+<p>Um termobloco é uma massa de metal atravessada por um canal estreito onde a água aquece a caminho da chávena. O calcário deposita-se nessas paredes e o carbonato de cálcio é um isolante térmico razoável — e é exatamente aí que começa o problema.</p>
+<ul>
+<li><strong>O aquecimento abranda.</strong> A resistência de aquecimento trabalha mais tempo para atingir a temperatura-alvo, e o calcário pesado chega para fazer disparar os próprios controlos de temperatura da placa em algumas máquinas — a <a href="https://www.jura.com/">documentação da Jura</a> liga explicitamente o calcário à família de códigos de termobloco.</li>
+<li><strong>A sonda mente.</strong> Uma camada de calcário altera a rapidez com que a sonda no interior do bloco sente o calor, e a placa pode acreditar que a máquina está a sobreaquecer — ou a falhar o aquecimento — quando nenhuma das coisas é verdade.</li>
+<li><strong>O bloco trabalha acima da conta.</strong> O metal isolado fica acima da temperatura de projeto, o que força os fusíveis térmicos que o protegem. Um termobloco calcificado até ao tutano é peça para substituir, não para limpar: €90 a €180 numa Jura, por calcário que um frasco de descalcificador teria removido.</li>
+</ul>
+<h2>O que o calcário faz a válvulas e orifícios estreitos</h2>
+<p>O segundo campo de batalha é tudo o que é estreito. Nas máquinas Jura com válvula cerâmica motorizada, o calcário endurece o disco até este deixar de alcançar a posição ordenada pela placa — é exatamente isso que o <a href="https://pt.codefixcoffee.com/jura/automatic-machines/error-6/">Erro 6</a> reporta, e por isso a descalcificação completa é o primeiro passo, e gratuito, da sua correção. As entradas estreitas entopem pelo mesmo mecanismo: o <a href="https://pt.codefixcoffee.com/philips-saeco/espresso-machines/error-05/">Erro 05 da Philips</a> pode persistir depois da primagem porque uma entrada calcificada impede a bomba de sugar água. Os sensores de nível também contam — calcário num flutuador do depósito é causa clássica do falso aviso para encher um depósito que já está cheio. E um caudalímetro calcificado deixa de contar, que é uma das formas de a <a href="https://pt.codefixcoffee.com/delonghi/magnifica-dinamica/descale-light-stays-on-after-descaling/">luz de descalcificação da De'Longhi ficar acesa depois de descalcificar</a>: a máquina nunca registou o ciclo que correu.</p>
+<h2>Porque é que o vinagre não serve para algumas máquinas</h2>
+<p>O vinagre de cozinha é ácido acético e, para máquinas de espresso, acumula três deméritos. É fraco, pelo que precisa de longos tempos de contacto para amolecer calcário compacto dentro de um canal apertado. Ataca os acessórios de latão cromado e incha certas juntas de borracha. E o seu cheiro sobrevive a muitas lavagens dentro dos tubos de plástico. A <a href="https://www.nespresso.com/">Nespresso</a> é explícita quanto às consequências: não descalcifique com vinagre, porque danifica o circuito e faz perder o apoio — convém recordá-lo quando o <a href="https://pt.codefixcoffee.com/nespresso/vertuo-machines/blinking-lights/">padrão de luzes cor-de-laranja de uma Vertuo</a> o mandar para a rotina de descalcificação. Num bule de chá elétrico? Vinagre serve. Numa máquina com bomba, válvula e garantia? Use um descalcificador a sério.</p>
+<h2>Ácido cítrico ou ácido láctico</h2>
+<p>Quase todos os descalcificadores comerciais assentam num de dois ácidos alimentares:</p>
+<ul>
+<li><strong>Ácido cítrico</strong> — vende-se em pó, €3 a €6 para o equivalente a um ano numa casa normal, forte e rápido sobre calcário pesado. É a base da maioria dos descalcificadores universais; com bom enxaguamento, não deixa nada atrás.</li>
+<li><strong>Ácido láctico</strong> — mais suave e praticamente inodoro, comum nos frascos de marca que acompanham as máquinas. Mais gentil para juntas e acabamentos, em troca de precisar de um tempo de contacto um pouco maior para o mesmo calcário.</li>
+</ul>
+<p>Qualquer um deles funciona corrido pelo programa de descalcificação da própria máquina. O que conta é completá-lo: os contadores de aviso só registam um ciclo inteiro lançado a partir do menu de descalcificação, com o bico montado e a fase de enxaguamento incluída. Pare a meio ou improvise com um jarro, e <a href="https://pt.codefixcoffee.com/delonghi/magnifica-dinamica/descale-light-stays-on-after-descaling/">a luz fica acesa na mesma</a>.</p>
+<h2>Com que frequência: depende da sua água</h2>
+<p>Os lembretes das máquinas contam volume — chávenas servidas, litros bombeados — e não dureza, por isso as casas com água dura devem descalcificar antes de a luz alguma vez acender. Uma regra prática:</p>
+<ul>
+<li><strong>Água macia</strong> (abaixo de cerca de 7 °dH, ou 125 ppm): o lembrete da própria máquina chega; na prática, a cada 3 a 6 meses.</li>
+<li><strong>Moderadamente dura</strong> (7 a 14 °dH): a cada 2 a 3 meses.</li>
+<li><strong>Dura</strong> (acima de 14 °dH): aproximadamente uma vez por mês, e mais cedo se o caudal abrandar ou a bomba ficar ruidosa.</li>
+</ul>
+<h3>E a água em Portugal?</h3>
+<p>A dureza da água varia muito dentro do país: em regra, é macia nas zonas graníticas do Norte e mais dura no Sul e nas áreas calcárias, como o Algarve e o Alentejo. A ERSAR publica a qualidade da água por sistema de abastecimento, e a entidade gestora do seu concelho indica a dureza da zona — vale a pena confirmar esse valor antes de fixar o intervalo de descalcificação. Se usar água engarrafada na máquina, o rótulo lista o resíduo seco e o cálcio, o que permite comparar marcas e escolher uma água mais macia.</p>
+<p>Um pacote de tiras de teste de dureza custa €5 a €10, e a frequência certa sai desse número. Os sinais tardios são iguais em todas as marcas: caudais lentos e finos, bomba mais ruidosa, café mais frio — e, no fim da linha, os códigos acima. Descalcifique a tempo e a maioria desses códigos nunca chega a existir; um frasco de €10 é a reparação mais barata que este site alguma vez recomendará.</p>
+</main>
+<footer>Guias de reparação e explicações de códigos de erro de codefixcoffee.com.</footer>
+</body></html>
